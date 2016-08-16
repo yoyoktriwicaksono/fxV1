@@ -1,0 +1,80 @@
+# MASTER
+	1. pegawai DONE
+		# id
+		# Nama
+		# Alamat
+		# Department
+		# Tgl Lahir
+		# Tempat Lahir
+		# Kelompok Pegawai (Kontrak, Tetap, Harian) (LOOKUP DATA DONE, COMBO ?)
+		# NoHP
+		# NoTelp
+		# Email
+		
+	2. Kategory pegawai
+		# Id Kategory
+		# Kategori Pegawai (Staff, Operasional, Kru lintas) (LOOKUP DATA DONE, COMBO ?)
+		# Id Pegawai
+		# Status (Aktif, Non Aktif), hanya 1 yg aktif (LOOKUP DATA DONE, COMBO ?)
+		# Id Master Jadwal (Presensi Kru Lintas, Shift, Office Hours)
+			# Staff ==> Office Hours
+			# Operasional ==> Shift, Office Hours
+			# Kru Lintas ==> Jadwal Kereta
+
+	2.  Kereta (LOOKUP DATA DONE, COMBO ?, NAMA LOOKUP PERLU NAMA KERETA ?)
+		# Id Kereta
+		# Nama Kereta
+
+	3. Jadwal Kereta
+		# ID
+		# No Kereta
+		# Id Kereta
+		# Station Asal
+		# Station Tujuan
+		# Jam Berangkat
+		# Jam Tiba
+
+	4. Station
+		# ID Station
+		# Nama
+		# Daop
+
+	5. Area / DAOP ==> (LOOKUP DATA DONE, COMBO ?, NAMA LOOKUP PERLU NAMA AREA ?)
+		# ID
+		# Nama
+
+	6. Master Jadwal
+		# Id
+		# Nama Jadwal (Kru Lintas, Shift [1..N], Office Hours)
+		# Tgl
+		# Jam In
+		# Jam Out
+
+# TRANSAKSI
+
+	1. Presensi
+		# Id Presensi
+		# Tgl
+		# Id Pegawai
+		# Kategory Pegawai
+		# Status Kehadiran (Ijin, Sakit, Hadir, Alpa (Tanpa keterangan)) (LOOKUP DATA DONE, COMBO ?)
+		# Jam In
+		# Jam Out
+		# Id Jadwal Kereta (Mandatory jika Kru Lintas)
+
+
+# Report
+	1. Presensi Harian
+	2. Presensi Mingguan
+	3. Presensi Bulanan
+
+
+When request remote data, sending additional parameters also.
+Code example:
+
+$('#dg').datagrid({
+	queryParams: {
+		name: 'easyui',
+		subject: 'datagrid'
+	}
+});
