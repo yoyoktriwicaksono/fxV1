@@ -3,7 +3,7 @@ fx framework is web framework. it is created as a hobby.
 
 ## Screen Captures
 Login :  
-!(https://github.com/yoyoktriwicaksono/fxV1/blob/restructure/docs/images/login.png)
+![alt text](https://github.com/yoyoktriwicaksono/fxV1/blob/restructure/docs/images/login.png "Login")
 
 Main :  
-!(https://github.com/yoyoktriwicaksono/fxV1/blob/restructure/docs/images/main.png)
+![alt text](https://github.com/yoyoktriwicaksono/fxV1/blob/restructure/docs/images/main.png "Main")
