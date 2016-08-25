@@ -1,0 +1,44 @@
+#fm{
+	margin:0;
+	padding:10px 30px;
+}
+.ftitle{
+	color:#666;
+	padding:5px 0;
+	margin-bottom:10px;
+	border-bottom:1px solid #ccc;
+}
+.ftitle_appName{
+	font-size:16px;
+	font-weight:bold;
+}
+.ftitle_appversion{
+	font-size:9px;
+	font-weight:normal;
+}
+
+.fitem{
+	margin-bottom:5px;
+	  font-size:12px;
+	font-family: Verdana;
+
+}
+.fitem label{
+	display:inline-block;
+	width:120px;
+}
+
+/*
+ Toolbar button sparator
+*/
+.l-btn{
+        vertical-align:middle;
+}
+.button-sep{
+        display:inline-block;
+        width:0;
+        height:22px;
+        border-left:1px solid #ccc;
+        border-right:1px solid #fff;
+        vertical-align:middle;
+}

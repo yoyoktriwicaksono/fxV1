@@ -1,0 +1,17 @@
+Setting New Application
+
+1. init/app.config.php
+	# Change to appropiate database
+		$APP_CONFIG[DATABASE_VENDOR] = MYSQL;
+	# Change to appropiate url
+		define("APP_URL", "http://localhost/fxv1/");
+2. application/configuration/global.config.php
+	# Change to appropiate url
+		define("APPLICATION_URL", "http://localhost/fxv1/");
+	# Change to appropiate application title of login
+		define("APPLICATION_TITLE", "RESKA - Aplikasi Absensi");
+	# Change to appropiate application name of main panel
+		define("APPLICATION_NAME", "Aplikasi Absensi");
+3. service/bootstrap.php
+	# Change the database connection to appropiate database
+
